@@ -1,7 +1,10 @@
 function fiboEvenSum(n) {
-  // You can do it!
+  // function to check the sum of all even-valued Fibonacci Numbers
+
+  // Empty array to hold all Fibonaccu Numbers
   var arr = [];
 
+  // for loop will iterate over every number and add fibonacci numbers in array list
   for(var i = 1; i <= n; i++){
     if(arr.length <= 1){
       arr.push(i);
@@ -12,6 +15,8 @@ function fiboEvenSum(n) {
   }
   
   var sumOfEvenValues = 0;
+
+  // Adding all even valued terms from Fibonacci Numbers
   for(var j = 0; j < arr.length; j++){
     if((arr[j] % 2) == 0){
       sumOfEvenValues += arr[j];
@@ -21,7 +26,7 @@ function fiboEvenSum(n) {
   return sumOfEvenValues;
 }
 
-
+// checking all the problems
 fiboEvenSum(10);
 fiboEvenSum(18);
 fiboEvenSum(23);
